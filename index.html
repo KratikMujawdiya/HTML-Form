@@ -1,0 +1,86 @@
+
+<!----------------------------------------------------------------- Create a Form ---------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <!-- <style>
+        #About{
+            background-color: brown;
+        }
+    </style> -->
+</head>
+<body>
+    <h1>This is a HTML form</h1>
+    <form action="backend.php">
+        <div>
+            <label for="name">Name:</label><!--label banane se jab "Name:" par click karenge to curser move hoker name vale box par aayega-->
+            <br>
+            <input type="text" name="myName" id="name" placeholder="Enter your name">
+        </div>
+        <br>
+        <div>
+            Roll:<br><input type="text" name="myRole" placeholder="Enter your roll_number">
+        </div>
+        <br>
+        <div>
+            Email:<br><input type="text" name="myEmail" placeholder="Enter your email">
+        </div>
+        <br>
+        <div>
+            Date:<br><input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus:<br><input type="number" name="myBonus" placeholder="Enter bonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible? <input type="checkbox" name="myCheckbox">
+        </div>
+        <br>
+        <div>
+             <!--kinhi bhi checkboxes ka name same kar diya to unme se sirf ek hi check hoga-->
+        Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> Other <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Write about yourself:<br><textarea name="myText" id="About" cols="30" rows="10" placeholder="Enter about yourself"></textarea>
+            <!--Aap textarea ko bda and chota output me hi kar sakte ho-->
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+          <select name="myCar" id="car">
+            <option value="ftr" selected>Fortuner</option>
+            <option value="bmw">BMW</option>
+            <option value="RR">Royals Range</option>
+          </select>
+        </div>
+        <br>
+        Rating:<input type="radio" name="Rating" id="Rating1" value="1"><!--NOTE:Name sabka same rahegaa to radio button kisi ek par click hoga-->
+               <label for="Rating1">1</label>
+               <input type="radio" name="Rating" id="Rating2" >
+               <label for="Rating2">2</label>
+               <input type="radio" name="Rating" id="Rating3" value="3">
+               <label for="Rating3">3</label>
+               <input type="radio" name="Rating" id="Rating4" value="4">
+               <label for="Rating4">4</label>
+               <input type="radio" name="Rating" id="Rating5" value="5">
+               <label for="Rating5">5</label>
+               <br><br>
+         <input type="submit" value="Submit Now">
+         <input type="reset" value="Reset">
+         <br><br>
+         <footer>
+            <a href="https://www.google.com" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Oe4kHcJlOtIf2dvJUonSVlczSYExPFn6_A&usqp=CAU" width="40"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSziBY6mAMyQfE-m4scUHz8Ptt6PZgZON0Z0g&usqp=CAU" width="40"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi03CS1HLT8ZLm7edGb8ef0t_STn_sMxQtVw&usqp=CAU" width="40"></a>
+         </footer>
+    </form>
+
+</body>
+</html>
